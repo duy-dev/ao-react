@@ -12,7 +12,8 @@
                 "./src/*"
             ],
             "@/router/*": ["./src/router/*"],
-            "@/modules/*": ["./src/modules/*"]
+            "@/modules/*": ["./src/modules/*"],
+            "@/store/*": ["./src/store/*"]
         },
     "allowJs": true,
     "skipLibCheck": true,

@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router } from "react-router-dom";
-// require("dotenv").config();
-// console.log(process);
+import { Provider } from "react-redux";
+import store from "@/store";
 
 import "./assets/styles/reset.scss";
 import "./index.css";
@@ -14,9 +14,11 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   // <React.StrictMode>
-  <Router>
-    <App />
-  </Router>
+  <Provider store={store}>
+    <Router>
+      <App />
+    </Router>
+  </Provider>
   // </React.StrictMode>
 );
 
